@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -15,7 +16,7 @@
 :root {
   --text-color: #f5f5f5;
   --hover-color: #f4fc7b;
-  --bg-color: #5a5a5a;
+  --bg-color: #0b0000;
   --secon-bg-color: #141414;
   --big-font: 2.5rem;
   --norma-font: 2rem;
@@ -41,6 +42,8 @@ body {
   color: var(--text-color);
 
 }
+
+/* header section */
 
 header {
   position: fixed;
@@ -129,6 +132,8 @@ span {
 
 }
 
+/* home section */
+
 section {
   padding: 100px 10%;
 }
@@ -202,7 +207,7 @@ section {
 }
 
 
-.btn-box a.btn {
+.btn-box .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -222,7 +227,7 @@ section {
 
 }
 
-a.btn::before {
+.btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -234,25 +239,25 @@ a.btn::before {
   transition: .4s;
 }
 
-a.btn:hover {
+.btn:hover {
   color: var(--secon-bg-color);
 }
 
-a.btn:hover::before {
+.btn:hover::before {
   width: 100%;
 }
 
-a.btn:nth-child(2) {
+.btn:nth-child(2) {
   background: var(--bg-color);
   color: var(--hover-color);
 }
 
-a.btn:nth-child(2):hover {
+.btn:nth-child(2):hover {
   background: var(--bg-color);
 
 }
 
-a.btn:nth-child(2)::before {
+.btn:nth-child(2)::before {
   background: var(--hover-color);
 }
 
@@ -327,7 +332,7 @@ width: 100%;
 
 
 
-main hr {
+ hr {
 
   color: #f4fc7b;
 
@@ -493,25 +498,7 @@ h3 {
 }
 
 
-/* .circle {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #fff;
-}
 
-.circle .points {
-  width: 2px;
-  height: 10px;
-  background-color: var(--secon-bg-color);
-  position: absolute;
-  border-radius: 3px;
-  transform: rotate(calc(var(--i)*120deg)) translateY(-45px);
-  animation: glow 0.04s linear forwards;
-
-} */
 
 /* project */
 
@@ -659,12 +646,14 @@ opacity: 1;
   justify-content: center;
   width: 100%;
   height: 40px;
+  
 
 }
 
 .formbtn .btn {
   cursor: pointer;
   font-size: 1rem
+
 }
 
 /* footer css */
@@ -694,6 +683,9 @@ footer a i {
   font-size: 1rem;
   color: var(--secon-bg-color);
 }
+
+
+/* media query */
 
 @media(max-width:991px) {
 
